@@ -3,9 +3,9 @@ name: "Frogbot Security Scan"
 on:
   pull_request_target:
     types: [opened, synchronize]   # Scan every new or updated PR
-  push:
-    branches:
-      - main                       # Scan repo on pushes to main
+  # push:
+  #   branches:
+  #     - main                      # Scan repo on pushes to main
   schedule:
     - cron: "0 0 * * *"            # Daily scan at 00:00 GMT
   workflow_dispatch:               # Allow manual trigger
