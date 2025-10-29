@@ -6,8 +6,8 @@ on:
   # push:
   #   branches:
   #     - main                      # Scan repo on pushes to main
-  schedule:
-    - cron: "0 0 * * *"            # Daily scan at 00:00 GMT
+  # schedule:
+  #   - cron: "0 0 * * *"            # Daily scan at 00:00 GMT
   workflow_dispatch:               # Allow manual trigger
 
 permissions:
